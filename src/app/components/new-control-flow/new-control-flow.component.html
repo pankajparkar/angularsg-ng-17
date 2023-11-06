@@ -1,1 +1,80 @@
-<p>new-control-flow works!</p>
+<div class="container">
+    <mat-card>
+        <mat-card-title>
+            if else
+        </mat-card-title>
+        <mat-card-content>
+            <div>
+                <input #checkbox type="checkbox" [checked]="isChecked()" (change)="isChecked.set(checkbox.checked)" />
+            </div>
+            <div>
+                @if (isChecked()) {
+                <span>It is checked ✅ </span>
+                }
+                @else {
+                <span>Not checked ❌ </span>
+                }
+            </div>
+        </mat-card-content>
+    </mat-card>
+    <br>
+    <br>
+    <mat-card>
+        <mat-card-title>
+            for and empty
+        </mat-card-title>
+        <mat-card-content>
+            <ul>
+                @for (item of collection; track item.id; let index = $index) {
+                <li>
+                    <strong>{{item.name}}</strong> index={{index}}
+                </li>
+                }
+                @empty {
+                <li>
+                    No data found
+                </li>
+                }
+            </ul>
+
+        </mat-card-content>
+    </mat-card>
+    <br>
+    <br>
+    <mat-card>
+        <mat-card-title>
+            switch and default
+        </mat-card-title>
+        <mat-card-content>
+            <div>
+                @for (radioValue of radioValues; track radioValue.id) {
+
+                <div>
+                    <input type="radio" [checked]="selectedValue() === radioValue.id"
+                        (change)="selectedValue.set(radioValue.id)" />
+                    <label for="radio1">{{ radioValue.displayName }}</label>
+                </div>
+                }
+            </div>
+
+            @switch (selectedValue()) {
+            @case (1) {
+            <span>Case 1</span>
+            }
+            @case (2) {
+            <span>Case 2</span>
+            }
+            @case (3) {
+            <span>Case 3</span>
+            }
+            @case (4) {
+            <span>Case 4</span>
+            }
+            @default {
+            <span>Default case null and 4</span>
+            }
+            }
+
+        </mat-card-content>
+    </mat-card>
+</div>

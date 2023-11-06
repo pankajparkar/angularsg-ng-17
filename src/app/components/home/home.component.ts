@@ -9,7 +9,7 @@ import { RouterLink } from '@angular/router';
   imports: [
     CommonModule,
     MatListModule,
-    RouterLink,
+    RouterLink
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
