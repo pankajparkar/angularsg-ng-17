@@ -1,1 +1,9 @@
-<p>deferrable-views works!</p>
+<label>
+    Should load component
+    <input #checkbox type="checkbox" [checked]="isVisible()" (change)="isVisible.set(checkbox.checked)" />
+</label>
+
+
+@defer (when isVisible()) {
+<af-signal />
+}
