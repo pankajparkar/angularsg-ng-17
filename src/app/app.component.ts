@@ -5,6 +5,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { RouterLink, RouterOutlet } from '@angular/router';
 import { HomeComponent } from "./components/home/home.component";
+import { HeaderComponent } from './shared/header/header.component';
 
 @Component({
   selector: 'af-root',
@@ -19,6 +20,7 @@ import { HomeComponent } from "./components/home/home.component";
     MatToolbarModule,
     RouterOutlet,
     RouterLink,
+    HeaderComponent,
   ]
 })
 export class AppComponent {
