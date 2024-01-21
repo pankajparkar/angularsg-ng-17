@@ -1,0 +1,16 @@
+:host {
+  --max-container-width: 1200px;
+  --space-x : 24px;
+  .container {
+    background-color: rgb(41, 111, 233);
+
+    .grid-wrapper {
+      max-width: var(--max-container-width);
+      padding: var(--space-x);
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-x);
+    }
+  }
+}
