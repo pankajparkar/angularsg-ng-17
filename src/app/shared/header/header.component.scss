@@ -1,0 +1,28 @@
+:host {
+  --max-container-width: 1200px;
+  .navbar {
+    max-width: var(--max-container-width);
+    margin: 0 auto;
+    background-color: rgb(249, 247, 247);
+
+    &__navbar-wrapper {
+      display: flex;
+      margin: 0;
+      padding: 20px;
+      gap: 24px;
+      font-size: 20px;
+      li {
+        font-style: bold;
+        list-style: none;
+        cursor: pointer;
+        color: gray;
+
+        &.is-active {
+          font-style: normal;
+          color: rgb(19, 19, 19);
+
+        }
+      }
+    }
+  }
+}

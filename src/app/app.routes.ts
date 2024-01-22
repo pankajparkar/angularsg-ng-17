@@ -5,6 +5,8 @@ import { NewControlFlowComponent } from './components/new-control-flow/new-contr
 import { DeferrableViewsComponent } from './components/deferrable-views/deferrable-views.component';
 import { HomeComponent } from './components/home/home.component';
 import { ViewTransitionApiComponent } from './components/view-transition-api/view-transition-api.component';
+import { ContactComponent } from './shared/contact/contact.component';
+import { PriceGridComponent } from './components/price-grid/price-grid.component';
 
 export const routes: Routes = [
   {
@@ -26,6 +28,14 @@ export const routes: Routes = [
   {
     path: 'view-transition-api',
     component: ViewTransitionApiComponent,
+  },
+  {
+    path: 'contact',
+    component: ContactComponent,
+  },
+  {
+    path: 'price-grid',
+    component: PriceGridComponent,
   },
   {
     path: '**',

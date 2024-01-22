@@ -1,0 +1,26 @@
+:host {
+  .contact-form {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding:12px 24px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      border-radius: 12px;
+    h2 {
+      font-size: 40px;
+      margin-block: 24px;
+      text-align: center;
+    }
+    p {
+      text-align: center;
+      margin-bottom: 32px;
+      font-size: 20px;
+      color: gray;
+    }
+    button {
+      width: 100%;
+    }
+    input, textarea {
+      padding: 12px;
+    }
+  }
+}
